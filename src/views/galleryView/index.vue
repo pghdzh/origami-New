@@ -40,7 +40,7 @@
 
       <!-- 无限滚动哨兵 -->
       <div ref="sentinel" class="sentinel"></div>
-      <div class="loading" v-if="loading">黑暗中凝聚...</div>
+      <div class="loading" v-if="loading">加载中...</div>
       <div class="finished" v-if="finished">—— 已至深渊尽头 · 暂无更多 ——</div>
     </section>
 
@@ -220,7 +220,7 @@ interface RankingItem {
 
 const images = ref<ImageItem[]>([]);
 const pageImage = ref(1);
-const limit = 10;
+const limit = 20;
 const loading = ref(false);
 const finished = ref(false);
 const sentinel = ref<HTMLElement | null>(null);
@@ -736,9 +736,7 @@ $bronze: #a0704a;
           flex: 1;
           margin: 0 8px;
           font-weight: 500;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+        
           color: $pale;
         }
 

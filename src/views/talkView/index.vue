@@ -84,7 +84,7 @@
           <div v-if="loading" class="message bot" key="loading">
             <div class="avatar bot"></div>
             <div class="bubble loading">
-              <span class="loading-text">黑暗中凝聚...</span>
+              <span class="loading-text">思考中</span>
               <span class="dots">
                 <span class="dot">.</span><span class="dot">.</span
                 ><span class="dot">.</span>
